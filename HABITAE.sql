@@ -79,9 +79,10 @@ CREATE TABLE NOTA_FISCAL (
     DATA DATE
 );
 
+-- Chamamos a entidade empresa pra começar a trabalhar com a definição das FK's (chaves estrangeiras)
 SELECT * FROM EMPRESA;
 
-
+-- A partir daqui estamos definindo as chaves estrangeiras do banco de dados.
 ALTER TABLE EMPRESA
 ADD CONSTRAINT FK_EMPRESA_3
 FOREIGN KEY (ID_FUNCIONARIO)
