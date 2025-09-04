@@ -125,58 +125,6 @@ ADD CONSTRAINT fk_anuncio_imovel FOREIGN KEY (ID_IMOVEL) REFERENCES IMOVEL(ID_IM
 INSERT INTO EMPRESA (CNPJ, NOME, TELEFONE, EMAIL, ENDERECO_FISICO) VALUES
 ('12345678000199', 'HABITAE', 40028922, 'atendimento@habitae.com', 'Rua dos Alfeneiros Numero 04');
 
-INSERT INTO ENDERECO (CEP, RUA, NUMERO, COMPLEMENTO, CIDADE, ESTADO) VALUES
-('01001000', 'Praça da Sé', 100, 'Lado ímpar', 'São Paulo', 'SP'),
-('20040002', 'Rua do Ouvidor', 50, 'Sobrado', 'Rio de Janeiro', 'RJ'),
-('30130005', 'Avenida Afonso Pena', 1000, 'Edifício Commercial', 'Belo Horizonte', 'MG'),
-('40010010', 'Rua Chile', 25, 'Sala 501', 'Salvador', 'BA'),
-('70040903', 'Eixo Monumental', 12, 'Setor Administrativo', 'Brasília', 'DF'),
-('80010000', 'Rua das Flores', 300, 'Loja A', 'Curitiba', 'PR'),
-('90010004', 'Rua dos Andradas', 157, '5º andar', 'Porto Alegre', 'RS'),
-('50010020', 'Rua do Bom Jesus', 77, 'Casa amarela', 'Recife', 'PE'),
-('60010030', 'Avenida Beira Mar', 200, 'Apartamento 302', 'Fortaleza', 'CE'),
-('29010020', 'Rua da Lama', 45, 'Fundos', 'Vitória', 'ES'),
-('57010020', 'Rua do Comércio', 88, 'Galeria', 'Maceió', 'AL'),
-('65010000', 'Rua Grande', 123, 'Sobrado azul', 'São Luís', 'MA'),
-('69010001', 'Avenida Eduardo Ribeiro', 500, 'Edifício Amazonas', 'Manaus', 'AM'),
-('77010022', 'Quadra 101 Sul', 15, 'Conjunto 3', 'Palmas', 'TO'),
-('78010020', 'Avenida Getúlio Vargas', 700, 'Loja 25', 'Cuiabá', 'MT'),
-('88010001', 'Rua Felipe Schmidt', 33, 'Sala 1001', 'Florianópolis', 'SC'),
-('64010020', 'Avenida Frei Serafim', 1500, 'Casa 2', 'Teresina', 'PI'),
-('58010020', 'Avenida Epitácio Pessoa', 2000, 'Apartamento 501', 'João Pessoa', 'PB'),
-('49010020', 'Rua Laranjeiras', 99, 'Fundos', 'Aracaju', 'SE'),
-('67010020', 'Avenina Governador José Malcher', 876, 'Comércio', 'Belém', 'PA'),
-('69010020', 'Avenida Djalma Batista', 1234, 'Shopping', 'Manaus', 'AM'),
-('72800000', 'Rua 5', 10, 'Quadra 8', 'Luziânia', 'GO'),
-('13010020', 'Rua Barão de Jaguara', 555, 'Sobrado', 'Campinas', 'SP'),
-('14010020', 'Avenida Costa e Silva', 321, 'Galpão', 'Ribeirão Preto', 'SP'),
-('15010020', 'Rua General Glicério', 777, 'Loja B', 'São José do Rio Preto', 'SP'),
-('35510000', 'Rua da Liberdade', 88, 'Casa verde', 'Divinópolis', 'MG'),
-('38410020', 'Avenida Rondon Pacheco', 1500, 'Edifício Center', 'Uberlândia', 'MG'),
-('38010020', 'Rua Arthur de Machado', 222, 'Sala 3', 'Uberaba', 'MG'),
-('29110020', 'Avenida Nossa Senhora da Penha', 777, 'Loja 12', 'Vila Velha', 'ES'),
-('29010030', 'Rua São Marcos', 111, 'Casa dos fundos', 'Vitória', 'ES'),
-('80020020', 'Rua XV de Novembro', 999, 'Sobrado histórico', 'Curitiba', 'PR'),
-('81010020', 'Avenida República Argentina', 444, 'Conjunto 101', 'Curitiba', 'PR'),
-('90020030', 'Avenida João Pessoa', 321, 'Apartamento 201', 'Porto Alegre', 'RS'),
-('91010020', 'Rua Carlos Gomes', 654, 'Sala 401', 'Porto Alegre', 'RS'),
-('50020030', 'Rua da Aurora', 789, 'Edifício Aurora', 'Recife', 'PE'),
-('51010020', 'Avenida Boa Viagem', 2222, 'Apartamento 1002', 'Recife', 'PE'),
-('60020030', 'Avenida Dom Luís', 1234, 'Shopping Aldeota', 'Fortaleza', 'CE'),
-('60110020', 'Rua dos Pacajús', 55, 'Casa', 'Fortaleza', 'CE'),
-('57020030', 'Avenida da Paz', 333, 'Loja 7', 'Maceió', 'AL'),
-('57030040', 'Rua Jangadeiros Alagoanos', 888, 'Ponto final', 'Maceió', 'AL'),
-('65020030', 'Rua do Passeio', 666, 'Sobrado antigo', 'São Luís', 'MA'),
-('65110020', 'Avenida Daniel de La Touche', 1111, 'Condomínio', 'São Luís', 'MA'),
-('49020030', 'Avenida Ivo do Prado', 432, 'Comércio', 'Aracaju', 'SE'),
-('49030040', 'Rua Itabaianinha', 987, 'Residencial', 'Aracaju', 'SE'),
-('58020030', 'Rua das Trincheiras', 555, 'Centro', 'João Pessoa', 'PB'),
-('58030040', 'Avenida Cabo Branco', 1234, 'Beira-mar', 'João Pessoa', 'PB'),
-('67020030', 'Rua Ó de Almeida', 777, 'Comércio popular', 'Belém', 'PA'),
-('67110020', 'Avenida Almirante Barroso', 888, 'Marco', 'Belém', 'PA'),
-('78020030', 'Rua Galdino Pimentel', 333, 'Centro Sul', 'Cuiabá', 'MT'),
-('78030040', 'Avenida Isaac Póvoas', 1111, 'Praça', 'Cuiabá', 'MT');
-
 INSERT INTO PROPRIETARIO (CPF, NOME, TELEFONE) VALUES
 ('12345678901', 'João Silva Santos', '11987654321'),
 ('23456789012', 'Maria Oliveira Costa', '21976543210'),
@@ -229,58 +177,6 @@ INSERT INTO PROPRIETARIO (CPF, NOME, TELEFONE) VALUES
 ('30040050063', 'Leonardo Dantas Maciel', '11909876543'),
 ('40050060073', 'Jéssica Tavares Noronha', '21998765432');
 
-INSERT INTO IMOVEL (CNPJ, ID_ENDERECO, CPF_PROPRIETARIO, INTENCAO, TIPO, DESCRICAO) VALUES
-('12345678000199', 1, '12345678901', 'Venda', 'Apartamento', 'Apartamento de 2 quartos com vista para o mar na Praça da Sé'),
-('12345678000199', 2, '23456789012', 'Aluguel', 'Casa', 'Casa com quintal amplo e piscina no Rio de Janeiro'),
-('12345678000199', 3, '34567890123', 'Venda', 'Comercial', 'Sala comercial bem localizada no centro de Belo Horizonte'),
-('12345678000199', 4, '45678901234', 'Aluguel', 'Apartamento', 'Apartamento compacto para solteiros em Salvador'),
-('12345678000199', 5, '56789012345', 'Venda', 'Casa', 'Casa de condomínio com 3 suítes em Brasília'),
-('12345678000199', 6, '67890123456', 'Aluguel', 'Comercial', 'Ponto comercial em área de grande circulação em Curitiba'),
-('12345678000199', 7, '78901234567', 'Venda', 'Apartamento', 'Apartamento de luxo com varanda gourmet em Porto Alegre'),
-('12345678000199', 8, '89012345678', 'Aluguel', 'Casa', 'Casa geminada com garagem para 2 carros em Recife'),
-('12345678000199', 9, '90123456789', 'Venda', 'Comercial', 'Galpão logístico com 500m² em Fortaleza'),
-('12345678000199', 10, '01234567890', 'Aluguel', 'Apartamento', 'Kitnet mobiliado próximo ao metrô em Vitória'),
-('12345678000199', 11, '11223344556', 'Venda', 'Casa', 'Sobrado com área de lazer completa em Maceió'),
-('12345678000199', 12, '22334455667', 'Aluguel', 'Apartamento', 'Apartamento com acabamento de alto padrão em São Luís'),
-('12345678000199', 13, '33445566778', 'Venda', 'Comercial', 'Loja em shopping center em Manaus'),
-('12345678000199', 14, '44556677889', 'Aluguel', 'Casa', 'Chácara para temporada em Palmas'),
-('12345678000199', 15, '55667788990', 'Venda', 'Apartamento', 'Apartamento com vista panorâmica em Cuiabá'),
-('12345678000199', 16, '66778899001', 'Aluguel', 'Comercial', 'Escritório corporativo em Florianópolis'),
-('12345678000199', 17, '77889900112', 'Venda', 'Casa', 'Casa de praia com acesso direto à areia em Teresina'),
-('12345678000199', 18, '88990011223', 'Aluguel', 'Apartamento', 'Studio para estudantes em João Pessoa'),
-('12345678000199', 19, '99001112234', 'Venda', 'Comercial', 'Terreno comercial zona norte em Aracaju'),
-('12345678000199', 20, '10020030040', 'Aluguel', 'Casa', 'Casa com jardim e espelho d água em Belém'),
-('12345678000199', 21, '20030040050', 'Venda', 'Apartamento', 'Apartamento com lazer completo em Manaus'),
-('12345678000199', 22, '30040050060', 'Aluguel', 'Comercial', 'Salão de beleza pronto para uso em Luziânia'),
-('12345678000199', 23, '40050060070', 'Venda', 'Casa', 'Casa histórica restaurada em Campinas'),
-('12345678000199', 24, '50060070080', 'Aluguel', 'Apartamento', 'Apartamento com mobília designer em Ribeirão Preto'),
-('12345678000199', 25, '60070080090', 'Venda', 'Comercial', 'Box em centro de convenções em São José do Rio Preto'),
-('12345678000199', 26, '70080090100', 'Aluguel', 'Casa', 'Casa com piscina aquecida em Divinópolis'),
-('12345678000199', 27, '80090100110', 'Venda', 'Apartamento', 'Apartamento duplex com terraço em Uberlândia'),
-('12345678000199', 28, '90010020030', 'Aluguel', 'Comercial', 'Consultório médico em Uberaba'),
-('12345678000199', 29, '10020030041', 'Venda', 'Casa', 'Casa com home theater built-in em Vila Velha'),
-('12345678000199', 30, '20030040051', 'Aluguel', 'Apartamento', 'Apartamento com varanda ampla em Vitória'),
-('12345678000199', 31, '30040050061', 'Venda', 'Comercial', 'Posto de gasolina em Curitiba'),
-('12345678000199', 32, '40050060071', 'Aluguel', 'Casa', 'Casa de campo com lareira em Porto Alegre'),
-('12345678000199', 33, '50060070081', 'Venda', 'Apartamento', 'Apartamento com vista para o parque em Recife'),
-('12345678000199', 34, '60070080091', 'Aluguel', 'Comercial', 'Restaurante montado em Fortaleza'),
-('12345678000199', 35, '70080090101', 'Venda', 'Casa', 'Mansão com 5 suítes e piscina em Maceió'),
-('12345678000199', 36, '80090100111', 'Aluguel', 'Apartamento', 'Apartamento com climatização central em São Luís'),
-('12345678000199', 37, '90010020031', 'Venda', 'Comercial', 'Hotel em funcionamento em Manaus'),
-('12345678000199', 38, '10020030042', 'Aluguel', 'Casa', 'Casa container sustentável em Palmas'),
-('12345678000199', 39, '20030040052', 'Venda', 'Apartamento', 'Apartamento com energia solar em Cuiabá'),
-('12345678000199', 40, '30040050062', 'Aluguel', 'Comercial', 'Loja de conveniência em Florianópolis'),
-('12345678000199', 41, '40050060072', 'Venda', 'Casa', 'Casa inteligente com automação em Teresina'),
-('12345678000199', 42, '50060070082', 'Aluguel', 'Apartamento', 'Apartamento com portaria 24h em João Pessoa'),
-('12345678000199', 43, '60070080092', 'Venda', 'Comercial', 'Supermercado com estoque em Aracaju'),
-('12345678000199', 44, '70080090102', 'Aluguel', 'Casa', 'Casa com studio de gravação em Belém'),
-('12345678000199', 45, '80090100112', 'Venda', 'Apartamento', 'Apartamento com piscina privativa em Manaus'),
-('12345678000199', 46, '90010020032', 'Aluguel', 'Comercial', 'Oficina mecânica equipada em Luziânia'),
-('12345678000199', 47, '10020030043', 'Venda', 'Casa', 'Casa com deck de madeira em Campinas'),
-('12345678000199', 48, '20030040053', 'Aluguel', 'Apartamento', 'Apartamento com academia privativa em Ribeirão Preto'),
-('12345678000199', 49, '30040050063', 'Venda', 'Comercial', 'Franquia em operação em São José do Rio Preto'),
-('12345678000199', 50, '40050060073', 'Aluguel', 'Casa', 'Casa com forno de pizza artesanal em Divinópolis');
-
 INSERT INTO ENDERECO (CEP, RUA, NUMERO, COMPLEMENTO, CIDADE, ESTADO) VALUES
 ('01001000', 'Praça da Sé', 100, 'Lado ímpar', 'São Paulo', 'SP'),
 ('20040002', 'Rua do Ouvidor', 50, 'Sobrado', 'Rio de Janeiro', 'RJ'),
@@ -332,6 +228,58 @@ INSERT INTO ENDERECO (CEP, RUA, NUMERO, COMPLEMENTO, CIDADE, ESTADO) VALUES
 ('78020030', 'Rua Galdino Pimentel', 333, 'Centro Sul', 'Cuiabá', 'MT'),
 ('78030040', 'Avenida Isaac Póvoas', 1111, 'Praça', 'Cuiabá', 'MT'),
 ('88020030', 'Rua Padre Roma', 222, 'Centro', 'Florianópolis', 'SC');
+
+INSERT INTO IMOVEL (CNPJ, ID_ENDERECO, CPF_PROPRIETARIO, INTENCAO, TIPO, DESCRICAO) VALUES
+('12345678000199', 1, '12345678901', 'Venda', 'Apartamento', 'Apartamento de 2 quartos com vista para o mar na Praça da Sé'),
+('12345678000199', 2, '23456789012', 'Aluguel', 'Casa', 'Casa com quintal amplo e piscina no Rio de Janeiro'),
+('12345678000199', 3, '34567890123', 'Venda', 'Comercial', 'Sala comercial bem localizada no centro de Belo Horizonte'),
+('12345678000199', 4, '45678901234', 'Aluguel', 'Apartamento', 'Apartamento compacto para solteiros em Salvador'),
+('12345678000199', 5, '56789012345', 'Venda', 'Casa', 'Casa de condomínio com 3 suítes em Brasília'),
+('12345678000199', 6, '67890123456', 'Aluguel', 'Comercial', 'Ponto comercial em área de grande circulação em Curitiba'),
+('12345678000199', 7, '78901234567', 'Venda', 'Apartamento', 'Apartamento de luxo com varanda gourmet em Porto Alegre'),
+('12345678000199', 8, '89012345678', 'Aluguel', 'Casa', 'Casa geminada com garagem para 2 carros em Recife'),
+('12345678000199', 9, '90123456789', 'Venda', 'Comercial', 'Galpão logístico com 500m² em Fortaleza'),
+('12345678000199', 10, '01234567890', 'Aluguel', 'Apartamento', 'Kitnet mobiliado próximo ao metrô em Vitória'),
+('12345678000199', 11, '11223344556', 'Venda', 'Casa', 'Sobrado com área de lazer completa em Maceió'),
+('12345678000199', 12, '22334455667', 'Aluguel', 'Apartamento', 'Apartamento com acabamento de alto padrão em São Luís'),
+('12345678000199', 13, '33445566778', 'Venda', 'Comercial', 'Loja em shopping center em Manaus'),
+('12345678000199', 14, '44556677889', 'Aluguel', 'Casa', 'Chácara para temporada em Palmas'),
+('12345678000199', 15, '55667788990', 'Venda', 'Apartamento', 'Apartamento com vista panorâmica em Cuiabá'),
+('12345678000199', 16, '66778899001', 'Aluguel', 'Comercial', 'Escritório corporativo em Florianópolis'),
+('12345678000199', 17, '77889900112', 'Venda', 'Casa', 'Casa de praia com acesso direto à areia em Teresina'),
+('12345678000199', 18, '88990011223', 'Aluguel', 'Apartamento', 'Studio para estudantes em João Pessoa'),
+('12345678000199', 19, '99001112234', 'Venda', 'Comercial', 'Terreno comercial zona norte em Aracaju'),
+('12345678000199', 20, '10020030040', 'Aluguel', 'Casa', 'Casa com jardim e espelho d água em Belém'),
+('12345678000199', 21, '20030040050', 'Venda', 'Apartamento', 'Apartamento com lazer completo em Manaus'),
+('12345678000199', 22, '30040050060', 'Aluguel', 'Comercial', 'Salão de beleza pronto para uso em Luziânia'),
+('12345678000199', 23, '40050060070', 'Venda', 'Casa', 'Casa histórica restaurada em Campinas'),
+('12345678000199', 24, '50060070080', 'Aluguel', 'Apartamento', 'Apartamento com mobília designer em Ribeirão Preto'),
+('12345678000199', 25, '60070080090', 'Venda', 'Comercial', 'Box em centro de convenções em São José do Rio Preto'),
+('12345678000199', 26, '70080090100', 'Aluguel', 'Casa', 'Casa com piscina aquecida em Divinópolis'),
+('12345678000199', 27, '80090100110', 'Venda', 'Apartamento', 'Apartamento duplex com terraço em Uberlândia'),
+('12345678000199', 28, '90010020030', 'Aluguel', 'Comercial', 'Consultório médico em Uberaba'),
+('12345678000199', 29, '10020030041', 'Venda', 'Casa', 'Casa com home theater built-in em Vila Velha'),
+('12345678000199', 30, '20030040051', 'Aluguel', 'Apartamento', 'Apartamento com varanda ampla em Vitória'),
+('12345678000199', 31, '30040050061', 'Venda', 'Comercial', 'Posto de gasolina em Curitiba'),
+('12345678000199', 32, '40050060071', 'Aluguel', 'Casa', 'Casa de campo com lareira em Porto Alegre'),
+('12345678000199', 33, '50060070081', 'Venda', 'Apartamento', 'Apartamento com vista para o parque em Recife'),
+('12345678000199', 34, '60070080091', 'Aluguel', 'Comercial', 'Restaurante montado em Fortaleza'),
+('12345678000199', 35, '70080090101', 'Venda', 'Casa', 'Mansão com 5 suítes e piscina em Maceió'),
+('12345678000199', 36, '80090100111', 'Aluguel', 'Apartamento', 'Apartamento com climatização central em São Luís'),
+('12345678000199', 37, '90010020031', 'Venda', 'Comercial', 'Hotel em funcionamento em Manaus'),
+('12345678000199', 38, '10020030042', 'Aluguel', 'Casa', 'Casa container sustentável em Palmas'),
+('12345678000199', 39, '20030040052', 'Venda', 'Apartamento', 'Apartamento com energia solar em Cuiabá'),
+('12345678000199', 40, '30040050062', 'Aluguel', 'Comercial', 'Loja de conveniência em Florianópolis'),
+('12345678000199', 41, '40050060072', 'Venda', 'Casa', 'Casa inteligente com automação em Teresina'),
+('12345678000199', 42, '50060070082', 'Aluguel', 'Apartamento', 'Apartamento com portaria 24h em João Pessoa'),
+('12345678000199', 43, '60070080092', 'Venda', 'Comercial', 'Supermercado com estoque em Aracaju'),
+('12345678000199', 44, '70080090102', 'Aluguel', 'Casa', 'Casa com studio de gravação em Belém'),
+('12345678000199', 45, '80090100112', 'Venda', 'Apartamento', 'Apartamento com piscina privativa em Manaus'),
+('12345678000199', 46, '90010020032', 'Aluguel', 'Comercial', 'Oficina mecânica equipada em Luziânia'),
+('12345678000199', 47, '10020030043', 'Venda', 'Casa', 'Casa com deck de madeira em Campinas'),
+('12345678000199', 48, '20030040053', 'Aluguel', 'Apartamento', 'Apartamento com academia privativa em Ribeirão Preto'),
+('12345678000199', 49, '30040050063', 'Venda', 'Comercial', 'Franquia em operação em São José do Rio Preto'),
+('12345678000199', 50, '40050060073', 'Aluguel', 'Casa', 'Casa com forno de pizza artesanal em Divinópolis');
 
 INSERT INTO FUNCIONARIO (CNPJ, CPF, NOME, TELEFONE) VALUES
 ('12345678000199', '11122233344', 'Ana Carolina Mendes', '11987654321'),
@@ -644,3 +592,209 @@ INSERT INTO ANUNCIO (CNPJ, ID_IMOVEL, REDE, DESCRICAO, VALOR) VALUES
 ('12345678000199', 48, 'Online', 'Apartamento em Ribeirão Preto - academia privativa', 1400.00),
 ('12345678000199', 49, 'Tv', 'Franquia em São José do Rio Preto - em operação', 3200.00),
 ('12345678000199', 50, 'Outdoor', 'Casa em Divinópolis - forno de pizza artesanal', 1100.00);
+
+SELECT 
+    (SELECT COUNT(*) FROM ENDERECO) AS TOTAL_ENDERECO,
+    (SELECT COUNT(*) FROM PROPRIETARIO) AS TOTAL_PROPRIETARIO,
+    (SELECT COUNT(*) FROM IMOVEL) AS TOTAL_IMOVEL,
+    (SELECT COUNT(*) FROM FUNCIONARIO) AS TOTAL_FUNCIONARIO,
+    (SELECT COUNT(*) FROM USUARIO) AS TOTAL_USUARIO,
+    (SELECT COUNT(*) FROM RESERVA) AS TOTAL_RESERVA,
+    (SELECT COUNT(*) FROM PAGAMENTO) AS TOTAL_PAGAMENTO,
+    (SELECT COUNT(*) FROM NOTA_FISCAL) AS TOTAL_NOTA_FISCAL,
+    (SELECT COUNT(*) FROM ANUNCIO) AS TOTAL_ANUNCIO;
+
+"1. 5 consultas com SELECT e WHERE (10 pts)"
+
+-- Listar todos os imóveis para venda.
+SELECT * FROM IMOVEL WHERE INTENCAO = 'Venda';
+
+-- Selecionar reservas com check-in após 01/06/2024.
+SELECT * FROM RESERVA WHERE `CHECKIN` > '2024-06-01'; 
+
+-- Mostrar funcionários com telefone começando com '11'.
+SELECT * FROM FUNCIONARIO WHERE TELEFONE LIKE '11%';
+
+-- Listar anúncios veiculados na rede 'Online'.
+SELECT * FROM ANUNCIO WHERE REDE = 'Online';
+
+-- Selecionar pagamentos feitos via 'PIX' ou 'Cartão de Crédito'.
+SELECT * FROM PAGAMENTO WHERE 'PIX' = TIPO OR 'Cartão de Crédito' = TIPO;
+
+"2. 5 consultas com GROUP BY e ORDER BY com funções de agregação (10 pts)"
+
+-- Contar o número de imóveis por tipo, ordenado pela quantidade.
+SELECT TIPO, COUNT(*) AS QUANTIDADE FROM IMOVEL
+GROUP BY TIPO 
+ORDER BY QUANTIDADE DESC;
+
+-- Calcular o valor total de pagamentos por tipo, ordenado pelo valor.
+SELECT TIPO, SUM(VALOR) AS VALOR_TOTAL FROM PAGAMENTO
+GROUP BY TIPO
+ORDER BY VALOR_TOTAL DESC;
+
+-- Média de valores de anúncios por rede de divulgação.
+SELECT REDE, AVG(VALOR) AS VALOR_TOTAL FROM ANUNCIO
+GROUP BY REDE
+ORDER BY VALOR_TOTAL DESC;
+
+-- Quantidade de reservas por usuário (CPF), ordenado por quantidade.
+SELECT CPF_USUARIO, COUNT(*) AS QUANTIDADE_RESERVAS FROM RESERVA 
+GROUP BY CPF_USUARIO
+ORDER BY QUANTIDADE_RESERVAS DESC;
+
+-- Soma dos valores de pagamento por mês de data_pagamento.
+SELECT MONTH(DATA_PAGAMENTO) AS MES,
+		YEAR(DATA_PAGAMENTO) AS ANO,
+        SUM(VALOR) AS VALOR_TOTAL FROM PAGAMENTO
+		GROUP BY YEAR(DATA_PAGAMENTO), MONTH(DATA_PAGAMENTO)
+		ORDER BY MONTH(DATA_PAGAMENTO), YEAR(DATA_PAGAMENTO) ASC;
+        
+"3. 5 consultas com operadores aritméticos (5 pts)"
+
+-- Calcular o valor do anúncio com acréscimo de 10%.
+SELECT ID_ANUNCIO, DESCRICAO, VALOR AS VALOR_REAL, VALOR * 1.10 AS VALOR_ACRESCIDO FROM ANUNCIO;
+
+-- Diferença em dias entre check-in e check-out das reservas.
+SELECT ID_RESERVA, CHECKIN, CHECKOUT, DATEDIFF(CHECKOUT, CHECKIN) AS DIAS_DA_RESERVA FROM RESERVA;
+
+-- Valor médio diário das reservas (valor_total / dias).
+SELECT R.ID_RESERVA, R.CHECKIN, R.CHECKOUT, P.VALOR AS VALOR_TOTAL, DATEDIFF(CHECKOUT, CHECKIN) AS DIAS,
+ROUND(P.VALOR / DATEDIFF(R.CHECKOUT, R.CHECKIN), 2) AS VALOR_MEDIO_DIARIO
+FROM RESERVA R
+JOIN PAGAMENTO P ON R.ID_RESERVA = P.ID_RESERVA
+ORDER BY R.ID_RESERVA;
+
+-- Desconto de 5% nos valores de pagamento acima de R$ 3000.
+
+-- Calcular 2% de comissão sobre o valor dos anúncios.
+
+"4. 5 consultas com operadores de comparação (5 pts)"
+
+-- Selecionar imóveis com valor de anúncio superior a R$ 2000.
+
+-- Reservas com mais de 7 dias de duração.
+
+-- Pagamentos com valor diferente de R$ 1500.
+
+-- Anúncios com valor menor que a média geral.
+
+-- Funcionários com ID_FUNCIONARIO entre 10 e 20.
+
+"5. 5 consultas com operadores lógicos (AND, OR) (5 pts)"
+
+-- Imóveis para aluguel do tipo 'Apartamento' ou 'Casa'.
+
+-- Reservas em 2024 com valor superior a R$ 2000 ou duração maior que 5 dias.
+
+-- Usuários com telefone da região 11 (SP) ou 21 (RJ).
+
+-- Anúncios online com valor entre R$ 500 e R$ 1500.
+
+-- Pagamentos via 'Boleto' ou 'Dinheiro' com valor inferior a R$ 1000.
+
+"6. 2 consultas com operadores lógicos e negação (NOT) (3 pts)"
+
+-- Imóveis que não são do tipo 'Comercial'.
+
+-- Reservas que não foram pagas com 'Cartão de Crédito'.
+
+"7. 10 consultas com operadores auxiliares (IS NULL, BETWEEN, LIKE, IN) (10 pts)"
+
+-- Endereços com complemento nulo.
+
+-- Reservas com check-in entre Janeiro e Março de 2024.
+
+-- Proprietários com 'Silva' no nome.
+
+-- Imóveis localizados em SP ou RJ.
+
+-- Usuários com email do domínio '@email.com'.
+
+-- Pagamentos com valores entre R$ 1000 e R$ 2000.
+
+-- Funcionários com nomes começando com 'A'.
+
+-- Anúncios com descrição contendo 'luxo'.
+
+-- Reservas feitas por usuários específicos (CPF IN (...)).
+
+-- Notas fiscais emitidas em um período específico.
+
+"8. 5 consultas com funções de agregação (SUM(), AVG(), etc.) (5 pts)"
+
+-- Soma total investida em anúncios.
+
+-- Valor médio das reservas.
+
+-- Maior valor de pagamento registrado.
+
+-- Número total de imóveis por cidade.
+
+-- Média de valor dos anúncios por tipo de imóvel.
+
+"9. 5 consultas com funções de datas (NOW(), DATE(), YEAR(), etc.) (5 pts)
+Reservas do mês atual."
+
+-- Idade dos funcionários (se data_nascimento existisse) - usar data_emissao como exemplo.
+
+-- Pagamentos realizados no último trimestre.
+
+-- Anúncios veiculados no ano anterior.
+
+-- Dias até o check-in das reservas futuras.
+
+"10. 5 sub-consultas com agrupamento e união de dados (10 pts)"
+
+-- Imóveis com valor de anúncio acima da média.
+
+-- Usuários com mais reservas que a média.
+
+-- Proprietários com quantidade de imóveis maior que 2.
+
+-- Redes de anúncio com investimento total superior a R$ 5000.
+
+-- Reservas com valor total maior que a média por tipo de imóvel.
+
+"11. 5 consultas com JOIN e visualização de tabelas (5 pts)"
+
+-- Listar imóveis com seus endereços completos.
+
+-- Mostrar reservas com dados do usuário e imóvel.
+
+-- Pagamentos com informações da reserva e usuário.
+
+-- Anúncios com dados do imóvel e proprietário.
+
+-- Notas fiscais com detalhes do pagamento e reserva.
+
+"12. 10 consultas com tipos de JOIN: INNER, LEFT, RIGHT (10 pts)"
+
+-- INNER JOIN: Imóveis com endereços válidos.
+
+-- LEFT JOIN: Todos os proprietários, mesmo sem imóveis.
+
+-- RIGHT JOIN: Todos os usuários, mesmo sem reservas.
+
+-- INNER JOIN: Reservas com pagamentos realizados.
+
+-- LEFT JOIN: Imóveis mesmo sem anúncios.
+
+-- RIGHT JOIN: Todos os anúncios, mesmo sem imóvel (se aplicável).
+
+-- INNER JOIN: Funcionários com dados da empresa.
+
+-- LEFT JOIN: Reservas mesmo sem nota fiscal.
+
+-- RIGHT JOIN: Pagamentos sem reserva (inválidos).
+
+-- FULL JOIN (simulado): Todos os usuários e proprietários.
+
+"13. Criação de 1 TRIGGER e 1 STORED PROCEDURE (7 pts)"
+
+-- Trigger: Validar data de check-out > check-in antes de inserir reserva.
+
+-- Stored Procedure: Inserir novo usuário com verificações de duplicidade.
+
+"14. Geração do backup do banco de dados (.sql) (5 pts)"
+-- Comando para exportar backup completo do banco HABITAE.
